@@ -52,6 +52,21 @@ function stringOfShirtSize(size) {
 
 console.log(stringOfShirtSize(/* Medium */1));
 
+function shirtSizeOfString(str) {
+  switch (str) {
+    case "L" : 
+        return /* Large */2;
+    case "M" : 
+        return /* Medium */1;
+    case "S" : 
+        return /* Small */0;
+    case "XL" : 
+        return /* XLarge */3;
+    default:
+      return /* Medium */1;
+  }
+}
+
 var mySize = /* Medium */1;
 
 var otherSize = /* Large */2;
@@ -61,4 +76,5 @@ exports.otherSize = otherSize;
 exports.priceIf = priceIf;
 exports.price = price;
 exports.stringOfShirtSize = stringOfShirtSize;
+exports.shirtSizeOfString = shirtSizeOfString;
 /*  Not a pure module */
